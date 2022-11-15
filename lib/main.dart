@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gestion_stock_desktop/src/frontend/screens/auth/auth_login_screen.dart';
 
+import "src/frontend/screens/auth/auth_login_screen.dart";
 void main() {
   runApp(const GestionStock());
 }
