@@ -54,6 +54,7 @@ class AuthLoginScreen extends StatelessWidget {
                   ),
                   CustomTitleField(
                     title: "Mot de passe",
+                    isTextVisible: true,
                     prefixIcon: const Icon(Iconsax.lock),
                     suffixIcon: IconButton(
                       onPressed: () {},

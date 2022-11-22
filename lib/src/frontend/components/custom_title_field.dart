@@ -8,11 +8,13 @@ class CustomTitleField extends StatelessWidget {
     this.prefixIcon,
     this.suffixIcon,
     super.key,
+    this.isTextVisible = false,
   });
 
   final String title;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
+  final bool isTextVisible;
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +31,7 @@ class CustomTitleField extends StatelessWidget {
         ),
         const Gap(10),
         TextField(
+          obscureText: isTextVisible,
           decoration: InputDecoration(
             border: const OutlineInputBorder(
               borderSide: BorderSide.none,
